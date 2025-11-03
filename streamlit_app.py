@@ -26,3 +26,16 @@ page = st.sidebar.radio('Go to',
 if page == '🏠 Home':
   st.markdown('<p class="main-header">Nicolas Troncoso</p>', unsafe_allow_html=True)
   st.markdown('<p class="sub-header">Aspiring Tech Professional | Medgar Evers College</p>', unsafe_allow_html=True)
+  
+# Three Cloumes for Stats
+
+col1, col2, col3 = st.colums(3)
+with col1:
+  st.mertic('GPA','3.5','📚')
+with col2:
+  st.mertic('Projects','3','🎩')
+with col3:
+  st.mertic('Skills','22+','💸')
+
+st.write('...')
+  
