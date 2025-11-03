@@ -28,8 +28,9 @@ if page == '🏠 Home':
   st.markdown('<p class="sub-header">Aspiring Tech Professional | Medgar Evers College</p>', unsafe_allow_html=True)
   
 # Three Cloumes for Stats
-
-col1, col2, col3 = st.colums(3)
+  
+  col1, col2, col3 = st.columns(3)
+  
 with col1:
   st.mertic('GPA','3.5','📚')
 with col2:
