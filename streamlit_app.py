@@ -20,23 +20,94 @@ st.markdown('''
 # Sidebar
 st.sidebar.title('📍 Navigation')
 page = st.sidebar.radio('Go to',
-                        ['🏠 Home', '🧐 About', ' 💼 Projects', '🛠 Skills' ,'📝 Resume', '📩 Contact' ])
+                        ['🏠 Home', '🧐 About', '💼 Projects', '🛠 Skills' ,'📝 Resume', '📩 Contact' ])
 
 # Home Page
 if page == '🏠 Home':
-  st.markdown('<p class="main-header">Nicolas Troncoso</p>', unsafe_allow_html=True)
+  st.markdown('<p class="main-header">Avinash Jairam</p>', unsafe_allow_html=True)
   st.markdown('<p class="sub-header">Aspiring Tech Professional | Medgar Evers College</p>', unsafe_allow_html=True)
-  
-# Three Cloumes for Stats
-  
-  col1, col2, col3 = st.columns(3)
-  
-with col1:
-  st.mertic('GPA','3.5','📚')
-with col2:
-  st.mertic('Projects','3','🎩')
-with col3:
-  st.mertic('Skills','22+','💸')
 
-st.write('...')
+  # Three Columns for stats
+  col1, col2, col3 = st.columns(3)
+
+  with col1:
+      st.metric('GPA', '3.4', '📚')
+  with col2:
+      st.metric('Projects', '1', '💻')
+  with col3:
+      st.metric('Skills', '13+', '🚀')
+
+  st.write('---')
+
+  # Introduction with columns
+  col1, col2 = st.columns([2,1])
+  with col1:
+    st.subheader('Welcome to my digital space!👋')
+    st.write('''
+                I am a general business student passionate about product development and corperation mangagement. Currently learning
+                marketing, accounting, business law, and Python to develop techincal  skills.
+            
+                🎯 **Current Focus:** Building interactive web applications with Streamlit
+            
+                📚 **Currently Learning:** Internet and Emergin Technologies (CIS 211)
+            
+                🌱 **Fun Fact:** I work with theactical lighting equipment for my church!
+            ''')
+  with col2:
+    # Placeholder for image
+    st.image('https://raw.githubusercontent.com/avinashjairam/cis211_project1/refs/heads/main/grumpy_cat.jfif', use_column_width=True)
+
+# About Page
+elif page == '🧐 About':
+  st.title('About Me')
+
+  # Timeline of my Professional Journey
+  st.subheader('My Journey 🗺️')
+
+  with st.expander('2024 - Present: UPS Worker'):
+    st.write('''
+                - Major: General Business and Administration
+                - Relevant Coursework: Internet & Emerging Technologies, Marketing, data analysis, and accounting 
+                - Activities: Swimming, Gamer, Creative design
+            ''')
+
+  with st.expander('2022 - present: CUNY Medgar Evers College'):
+    st.write('''
+                - Dean Listed
+            ''')
+
+  st.subheader('Interests & Hobbies 🏀')
+  interests = ['Web Development', 'Gaming', 'Creative Design', 'Swimming', 'Travel', 'Thearical lighting techinican']
+
+  # Display the interests in columns
+  cols = st.columns(3)
+  for i, interest in enumerate(interests):
+    with cols[i % 3]:
+      st.info(f'🔷 {interest}')
+elif page == '💼 Projects':
+  st.title('My Projects')
+  st.write('Here are some projects I have worked on:')
+
+  # Project 1
+  with st.container():
+    col1, col2 = st.columns([1, 2])
   
+    with col1:
+        st.image('https://iprx-cms-content.ams1.vultrobjects.com/Blog_How_To_Crawl_4_capcha_ded9206d5f.png')
+
+    with col2:
+        st.subheader('🛒 Thearical lighting Course 101')
+        st.write('The basics of lighting from Tik Tok videos to the theater')
+        st.caption('**Equipment:** Philips, Cree Lighting, ADJ Lighting')
+
+
+
+
+
+
+
+
+
+
+
+
