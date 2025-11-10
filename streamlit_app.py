@@ -93,7 +93,7 @@ elif page == '💼 Projects':
     col1, col2 = st.columns([1, 2])
   
     with col1:
-        st.image('https://iprx-cms-content.ams1.vultrobjects.com/Blog_How_To_Crawl_4_capcha_ded9206d5f.png')
+        st.image('https://www.google.com/imgres?q=theatrical%20lighting&imgurl=https%3A%2F%2Fwww.portlighting.com%2Fhs-fs%2Fhubfs%2FPortLightingSystems_March2022%2Fimages%2FPort%2BLighting%2BSystems%2BTheatrical%2BLighting%2BDesign%2Band%2BInstallation-1.jpg%3Fwidth%3D2500%26height%3D1875%26name%3DPort%2BLighting%2BSystems%2BTheatrical%2BLighting%2BDesign%2Band%2BInstallation-1.jpg&imgrefurl=https%3A%2F%2Fwww.portlighting.com%2Ftheatrical-stage-lighting&docid=LMDEp2uwNHy2qM&tbnid=U37OHK_5VOxndM&vet=12ahUKEwiezfe9_OeQAxV8q4kEHfqNLxsQM3oECBoQAA..i&w=2500&h=1875&hcb=2&ved=2ahUKEwiezfe9_OeQAxV8q4kEHfqNLxsQM3oECBoQAA')
 
     with col2:
         st.subheader('🔦 Thearical lighting Course 101')
