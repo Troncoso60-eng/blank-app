@@ -96,7 +96,7 @@ elif page == '💼 Projects':
         st.image('https://iprx-cms-content.ams1.vultrobjects.com/Blog_How_To_Crawl_4_capcha_ded9206d5f.png')
 
     with col2:
-        st.subheader('🛒 Thearical lighting Course 101')
+        st.subheader('🔦 Thearical lighting Course 101')
         st.write('The basics of lighting from Tik Tok videos to the theater')
         st.caption('**Equipment:** Philips, Cree Lighting, ADJ Lighting')
 
